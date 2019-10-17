@@ -1,3 +1,4 @@
+[WINDOWS]
 Activate and run a local server
 
 env\Scripts\activate.bat	Activate environmnet

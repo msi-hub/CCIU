@@ -194,24 +194,3 @@ h1 { font-family:  'Orbitron', sans-serif;}
 .dropdown a:hover {background-color:  #008080;   cursor: pointer;}
 
 .show {display: block;}
-/*tooltip*/
-.tooltipster-box{
- border-bottom:3px solid #2AFFF0; /*colored line at popup bottom*/
- background:rgb(0,0,0,0.9); /*background of popup*/
- }
-
-/*arrow and border color depending on where the tooltip opens (for example above or below the element)*/
-.tooltipster-sidetip.tooltipster-punk.tooltipster-top
-.tooltipster-arrow-border{border-top-color:#50E3C2}
-
-.tooltipster-sidetip.tooltipster-punk.tooltipster-bottom
-.tooltipster-arrow-border{border-bottom-color:#FFF;}
-
-.tooltipster-sidetip.tooltipster-punk.tooltipster-left
-.tooltipster-arrow-border{border-left-color:#FFF;}
-
-.tooltipster-sidetip.tooltipster-punk.tooltipster-right
-.tooltipster-arrow-border{border-right-color:#FFF;}
-
-.tooltipster-sidetip.tooltipster-punk
-.tooltipster-content{color:#2AFFF0;padding:8px 16px; font-family:'Arial';}

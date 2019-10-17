@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900&display=swap');
+
+body {
+  background-image: url("bgv.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+html {
+  font-family: "arials", sans-serif;
+  font-weight:400;
+}
+
+/*header*/
+#logo { width: 10%;
+}
+h1 { font-family:  'Orbitron', sans-serif;}
+#title {
+  font-family: 'arials', sans-serif;
+  font-weight: 700;
+  color:#2AFFF0;
+  opacity: 0.9;
+  margin-top:2%;
+  margin-left:5%;
+  margin-right:5%;
+  margin-bottom:0;
+  text-align: center;
+}
+#svgcan {
+  width: 550px;
+  height: 600px;
+}
+#world g {fill:#2AFFF0;}
+#pWidth {width: 400px;}
+/*rwapper*/
+* {
+  box-sizing: border-box;
+}
+.Recthover{
+  fill: #2AFFF0;
+  stroke: #2AFFF0;
+  stroke-width: 3px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.header {
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  padding: 15px;
+  color: #2AFFF0;
+  font-weight: 700;
+  text-align: left;
+  font-size: 14px;
+}
+
+.footer {
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%; text-align: center;}
+  .col-s-2 {width: 16.66%; text-align: center;}
+  .col-s-3 {width: 25%; text-align: center;}
+  .col-s-4 {width: 33.33%; text-align: center;}
+  .col-s-5 {width: 41.66%; text-align: center;}
+  .col-s-6 {width: 50%; text-align: center;}
+  .col-s-7 {width: 58.33%; text-align: center;}
+  .col-s-8 {width: 66.66%; text-align: center;}
+  .col-s-9 {width: 75%; text-align: center;}
+  .col-s-10 {width: 83.33%; text-align: center;}
+  .col-s-11 {width: 91.66%; text-align: center;}
+  .col-s-12 {width: 100%; text-align: left;}
+  rect { height: 300px;}
+  #svgcan {
+    transform: scale(0.7,0.7);
+    text-align: left;
+    width: 600px;
+    left:-400px;}
+  #world {margin-left: 10px;
+  margin-top: 10px; left: -200px;}
+  #row {width: 300px;
+  height: 300px;}
+
+}
+@media only screen and (min-width: 900px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%; text-align: center;}
+  .col-2 {width: 16.66%; text-align: center;}
+  .col-3 {width: 25%; text-align: center;}
+  .col-4 {width: 33.33%; text-align: center;}
+  .col-5 {width: 41.66%; text-align: center;}
+  .col-6 {width: 50%; text-align: center;}
+  .col-7 {width: 58.33%; text-align: center;}
+  .col-8 {width: 66.66%; text-align: center;}
+  .col-9 {width: 75%; text-align: center;}
+  .col-10 {width: 83.33%; text-align: center;}
+  .col-11 {width: 91.66%; text-align: center;}
+  .col-12 {width: 100%; text-align: center;}
+}
+/*Listdown Button*/
+.dropbtn {
+  background-color:#2AFFF0;
+  color: #008B8B;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #008B8B;
+  color: #2AFFF0;
+}
+#myInput {
+  box-sizing: border-box;
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 14px;
+  background-color: rgb(0,0,0,0.9);
+  color: #2AFFF0;
+  font-weight: bold;
+  width: 250px;
+  border: none;
+  border-bottom: 1px solid #008080;
+}
+#myInput:focus {outline: 3px solid #008080;}
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+.dropdown-content {
+  scrollbar-width: thin;
+  scrollbar-color: #2AFFF0 #008080;
+  display: none;
+  position: absolute;
+  background-color: rgb(0,0,0,0.9);
+  min-width: 260px;
+  overflow: auto;
+  text-align: left;
+  border: 1px solid #008080;;
+  z-index: 1;
+  max-height: 300px;
+  overflow:scroll;
+  overflow-x: hidden;
+
+}
+
+.dropdown-content a {
+  color: #2AFFF0;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color:  #008080;   cursor: pointer;}
+
+.show {display: block;}
+/*tooltip*/
+.tooltipster-box{
+ border-bottom:3px solid #2AFFF0; /*colored line at popup bottom*/
+ background:rgb(0,0,0,0.9); /*background of popup*/
+ }
+
+/*arrow and border color depending on where the tooltip opens (for example above or below the element)*/
+.tooltipster-sidetip.tooltipster-punk.tooltipster-top
+.tooltipster-arrow-border{border-top-color:#50E3C2}
+
+.tooltipster-sidetip.tooltipster-punk.tooltipster-bottom
+.tooltipster-arrow-border{border-bottom-color:#FFF;}
+
+.tooltipster-sidetip.tooltipster-punk.tooltipster-left
+.tooltipster-arrow-border{border-left-color:#FFF;}
+
+.tooltipster-sidetip.tooltipster-punk.tooltipster-right
+.tooltipster-arrow-border{border-right-color:#FFF;}
+
+.tooltipster-sidetip.tooltipster-punk
+.tooltipster-content{color:#2AFFF0;padding:8px 16px; font-family:'Arial';}
